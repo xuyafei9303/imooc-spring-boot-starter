@@ -37,8 +37,8 @@ public class JsonResult {
         return new JsonResult(500, msg, null);
     }
 
-    public JsonResult ok() {
-        return new  JsonResult(null);
+    public static JsonResult ok() {
+        return new JsonResult(null);
     }
 
     public static JsonResult errorMap(Object data) {

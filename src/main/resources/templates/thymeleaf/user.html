@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello
+<div>
+    姓名：<input th:id="${user.name}" th:name="${user.name}" th:value="${user.name}"/>
+    <br>
+    年龄：<input th:value="${user.desc}"/>
+    <br>
+    <!--生日：<input th:value="${user.birthday}"/>-->
+    生日：<input th:value="${#dates.format(user.birthday, 'yyyy:MM:dd')}"/>
+    <br>
+</div>
+</body>
+</html>

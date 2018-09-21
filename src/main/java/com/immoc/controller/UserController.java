@@ -24,7 +24,7 @@ public class UserController {
         User u = new User();
         u.setName("immoc");
         u.setAge(18);
-        u.setBrithday(new Date());
+        u.setBirthday(new Date());
         u.setPassword("immoc");
         u.setDesc("desc");
 
